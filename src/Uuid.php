@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Akmeh;
 
-use Webpatser\Uuid\Uuid;
+use Webpatser\Uuid\Uuid as WebpasterUuid;
 
 trait Uuid
 {
@@ -16,7 +16,7 @@ trait Uuid
         parent::boot();
 
         static::creating(function ($model) {
-            $model->{$model->getKeyName()} = Uuid::generate()->string;
+            $model->{$model->getKeyName()} = WebpasterUuid::generate()->string;
         });
     }
 }
