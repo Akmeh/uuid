@@ -1,0 +1,21 @@
+{
+    "name": "akmeh/uuid",
+    "description": "UUID Helper for Laravel",
+    "keywords": ["framework", "laravel", "api"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "webpatser/laravel-uuid": "^3.0"
+    },
+    "autoload": {
+         "psr-4": {
+            "Akmeh\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
